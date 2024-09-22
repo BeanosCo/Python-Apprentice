@@ -14,6 +14,7 @@ Use this code to get a random x and y location
 
 """
 import turtle as turtle
+import random
 
 
 screen = turtle.Screen()
@@ -29,7 +30,6 @@ def screen_clicked(x, y):
     """Print the x and y coordinates of the screen when clicked.
     and make the turtle move to the clicked location."""
 
-    import random
 
     x = random.randint(-300, 300)
     y = random.randint(-300, 300)
