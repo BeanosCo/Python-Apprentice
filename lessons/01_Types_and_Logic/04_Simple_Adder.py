@@ -11,15 +11,28 @@ at the comments and the code snippets in the previous lessons, like
 
 # Import the required modules
 
+from tkinter import messagebox, simpledialog, Tk
+
 # Create a window object
+
+window = Tk()
 
 # Hide the window, hint: use the withdraw method
 
-# Ask the user for the first number   
+window.withdraw()
+
+# Ask the user for the first number  
+
+num1 = simpledialog.askfloat("Your Addition", "What is the first number?")
 
 # Ask the user for the second number
 
+num2 = simpledialog.askfloat("Your Addition", "What is the second number?")
+
 # Display the sum of the two numbers 
+
+messagebox.showinfo('Your Addition', num1 + num2)
 
 # Keep the window open
 
+window.mainloop()
