@@ -26,16 +26,18 @@ forwards = [20,30,45,80,60,75,89]
 lefts = [85,45,67,90,20,5,60]
 colors = ["red", "blue", "orange", "green", "purple", "yellow", "red"]
 
-for  i in range(8):
 
-    forward = forwards[i]
-    left = lefts[i]
-    color = colors[i]
+for i in range(60):
+    for  i in range(8):
+
+        forward = forwards[i]
+        left = lefts[i]
+        color = colors[i]
 
 
-    tina.color(color)
-    tina.forward(forward)
-    tina.left(left)
+        tina.color(color)
+        tina.forward(forward)
+        tina.left(left)
 
 turtle.exitonclick()  
 
