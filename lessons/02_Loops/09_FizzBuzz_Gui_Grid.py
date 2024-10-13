@@ -32,19 +32,25 @@ from guizero import App, Box, Text
 app = App("Numbers Grid", layout="grid")
 
 # Create a 10x10 grid using nested loops
-# Or you can use a single loop and calculate the row and column
+# Or you can use a single loop and calculate the row and
 
 
     
 
 for i in range(11):
     for j in range(11):
+
+        
+
         if i % 15 == 0:
-            number = ('🐍')
+            number = (i, '🐍')
+            Text(app, text=str(number), grid=[j, i], color="red")
         elif i % 5 == 0:
-            number = ('🦡')
+            number = (i, '🦡')
+            Text(app, text=str(number), grid=[j, i], color="red")
         elif i % 3 == 0:
-            number = ('🍄')
+            number = (i, '🍄')
+            Text(app, text=str(number), grid=[j, i], color="red")
 
         print(f"({i}{number})", end= ' ')
     print()
