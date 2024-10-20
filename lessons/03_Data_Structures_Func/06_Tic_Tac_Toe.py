@@ -11,10 +11,19 @@ def check_row(l):
     """Check if a player won on a row
     Args:
         l: a 3 element iterable
-        
+
+
     Returns:
         The winner's token ( x or o ) if there is one, otherwise None
         """
+    
+    board = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+
+
 
     return None
 
